@@ -6,12 +6,12 @@
 
 int main(void)
 {
-	 char ch;
-		printf("\nLowercase characters : \n");
-		for (ch = 'a'; ch <= 'z'; ch++)
-	{
-	printf("%c ", ch);
-	}
+	 char letter;
 
-    return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+		putchar('\n');
+
+	return (0);
 }
