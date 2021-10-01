@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - chiffres
+ *main - lowercase
  *Return: 0
  */
 
@@ -8,7 +8,7 @@ int main(void)
 {
 	 char c;
 
-	for (c = 'o'; c <= '9'; ++c)
+	for (c = 'o'; c <= '9'; c++)
 		putchar(c);
 
 	putchar('\n');
