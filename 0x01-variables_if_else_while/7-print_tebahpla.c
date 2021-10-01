@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- *main - lowercase
+ *main - lowercase reverse
  *Return: 0
  */
 
 int main(void)
 {
-	 char c;
+	 int i;
 
-	for (c = 'z'; c <= 'a'; ++c)
-		putchar(c);
+	for (i = 'z'; i>= 'a'; c--)
+		putchar(i);
 
 	putchar('\n');
 
