@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-	int n1 = 0, n2;
+	int c = 0, b;
 
-	while (n1 < 9)
+	while (c < 9)
 	{
-		n2 = n1 + 1;
-		while (n2 <= 9)
+		b = c + 1;
+		while (b <= 9)
 		{
-			putchar(n1 + '0'); /* To get the ASCII value of the number */
-			putchar(n2 + '0');
-			if (n1 < 8 || n2 < 9)
+			putchar(c + '0');
+			putchar(b + '0');
+			if (c < 8 || b < 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			n2++;
+			b++;
 		}
-		n1++;
+		c++;
 	}
 
 	putchar('\n');
