@@ -1,0 +1,24 @@
+#include "main.h"
+/**
+ *_abs - absolute
+ *@r: value
+ *Return: 0
+ */
+
+int print_last_digit(int r)
+{
+	_putchar(_abs(r % 10) + '0');
+	return (_abs(r % 10));
+}
+
+/**
+ * _abs - returns absolute value of given int
+ * @r: number for which we want to get the absolute value
+ *
+ * Return: absolute value of number r
+ */
+
+int _abs(int r)
+{
+	return ((r < 0) ? -r : r);
+}
