@@ -10,7 +10,7 @@
 
 int largest_number(int a, int b, int c)
 {
-    int largest;
+	int largest;
 	int s;
 
 	largest = (s = a > b ? a : b) > c ? s : c;
