@@ -3,7 +3,6 @@
 
 /**
  *print_times_table - Print * tables
- *@n: value
  */
 
 void print_times_table(int n)
