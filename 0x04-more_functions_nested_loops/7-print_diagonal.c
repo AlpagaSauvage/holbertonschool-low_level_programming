@@ -1,0 +1,34 @@
+#include "main.h"
+
+/**
+ *print_diagonal - print diagonal
+ *@n: value
+ *Return: 0
+ */
+
+void print_diagonal(int n)
+{
+	int i = 0;
+	int p = 0;
+
+	if (n > 0)
+	{
+		while (n > 0)
+		{
+			i = p;
+			while (i > 0)
+			{
+				_putchar(' ');
+				i--;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			n--;
+			p++;
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
