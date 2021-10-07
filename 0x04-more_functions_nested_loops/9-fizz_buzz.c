@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *main - fizzbuzz
  *Return: 0
@@ -10,11 +11,11 @@ int main(void)
 
 	for (n = 1; n <= 100; n++)
 	{
-		if ((n % 3) == 0)
+		if ((n % 3) == 0 && (n % 5) != 0)
 		{
 			printf("Fizz ");
 		}
-		if ((n % 5) == 0 && n != 100)
+		if ((n % 5) == 0 && n != 100 && (n % 3) != 0)
 		{
 			printf("Buzz ");
 		}
