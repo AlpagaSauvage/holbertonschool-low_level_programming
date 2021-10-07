@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  *main - fizzbuzz
+ *Return: 0
  */
 
 int main(void)
@@ -21,7 +22,7 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((n % 3) != 0 && (n % 5) != 0) 
+		else if ((n % 3) != 0 && (n % 5) != 0)
 		{
 			printf("%d ", n);
 		}
