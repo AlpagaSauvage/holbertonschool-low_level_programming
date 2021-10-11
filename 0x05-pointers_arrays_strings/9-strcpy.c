@@ -1,6 +1,11 @@
 #include "main.h"
 
-
+/**
+ * *_strcpy - copy
+ *@dest: value
+ *@src: value bis
+ *Return: s
+ */
 
 char *_strcpy(char *dest, char *src)
 {
