@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strspn - compare
+ * _strpbrk - search string
  * @s: string 1
  * @accept: string 2
- * Return: i
+ * Return: 0
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
@@ -17,13 +17,9 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				break;
+				return (&s[i]);
 			}
 		}
-		if (!accept[j])
-		{
-			break;
-		}
 	}
-	return (i);
+	return (0);
 }
