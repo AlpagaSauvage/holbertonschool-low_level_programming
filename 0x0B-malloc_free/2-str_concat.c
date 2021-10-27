@@ -2,51 +2,83 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates 2 string
- * @s1: string 1
- * @s2: string2
- * Return: c
+ * _strlen - returns the length of the string
+ * @s: the string
+ *
+ * Return: the length of the s string
  */
 
-char *str_concat(char *s1, char *s2)
+int		_strlen(char *s)
 {
-	char *c;
-	int a = 0, b = 0;
+	int i = 0;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
-
-	c = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2)) + 1);
-
-	while (s1[a] != '\0')
-	{
-		c[a] = c[b];
-		a++;
-	}
-	while (s2[b] != '\0')
-	{
-		c[a + b] = s2[b];
-		b++;
-	}
-	c[a + b] = '\0';
-	return (c);
+	if (s != NULL)
+		while (s[i])
+			i++;
+	return (i);
 }
 
 /**
- *_strlen - lenght
- *@s: value
- *Return: i
+ * _strdup - allocates a new space in memory which contains
+ * a copy of the string given as a parameter
+ *
+ * @str: the string to duplicate
+ *
+ * Return: a pointer to the new string, or NULL if str = NULL or fail
  */
 
-
-int _strlen(char *s)
+char	*_strdup(char *str)
 {
-	int i;
+	char	*new_str;
+	int		i = 0;
 
-	for (i = 0; s[i] != '\0'; ++i)
+	if (str == NULL)
+		return (NULL);
+	new_str = malloc(sizeof(char) * _strlen(str));
+	if (!new_str)
+		return (NULL);
+	while (str[i])
 	{
+		new_str[i] = str[i];
+		i++;
 	}
-	return (i);
+	return (new_str);
+}
+
+/**
+ * str_concat - concatenates two strings
+ *
+ * @s1: the first string
+ * @s2: the second string
+ *
+ * Return: a pointer to the new string, or NULL on failure
+ */
+
+char	*str_concat(char *s1, char *s2)
+{
+	char	*str;
+	int		i = 0, j = 0;
+
+	if (s1 == NULL && s2 != NULL)
+		return (_strdup(s2));
+	if (s2 == NULL && s1 != NULL)
+		return (_strdup(s1));
+	str = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
+	if (!str)
+		return (NULL);
+	if (s1 != NULL && s2 != NULL)
+	{
+		while (s1[i])
+		{
+			str[i] = s1[i];
+			i++;
+		}
+		while (s2[j])
+		{
+			str[i + j] = s2[j];
+			j++;
+		}
+	}
+	str[i + j] = '\0';
+	return (str);
 }
