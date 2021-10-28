@@ -17,7 +17,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	c = malloc(sizeof(size) * nmemb);
+	c = malloc(size * nmemb);
+
+	for (c = 0; ; c++)
+	{
+		return (0);
+	}
 
 	if (c == NULL)
 	{
