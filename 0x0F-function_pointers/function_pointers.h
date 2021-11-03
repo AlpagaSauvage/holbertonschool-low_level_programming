@@ -1,7 +1,7 @@
 #ifndef function_pointers
 #define function_pointers
 
-#include <stdlib.h> 
+#include <stdlib.h>
 
 int _putchar(char c);
 
