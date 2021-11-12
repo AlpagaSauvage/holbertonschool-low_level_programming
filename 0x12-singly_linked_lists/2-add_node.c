@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	
+
 	new->str = strdup(str);
 	new->len = _strlen(str);
 	new->next = *head;
@@ -22,6 +22,13 @@ list_t *add_node(list_t **head, const char *str)
 
 	return (*head);
 }
+
+
+/**
+* _strlen - check the length of the string
+* Return: length of the string
+* @s: string
+*/
 
 int _strlen(const char *s)
 {
