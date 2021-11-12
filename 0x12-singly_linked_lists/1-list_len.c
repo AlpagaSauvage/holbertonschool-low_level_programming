@@ -1,6 +1,10 @@
 #include "lists.h"
 
-
+/**
+ * list_len - list size of len
+ * @h: value
+ *  Return: element
+ */
 
 size_t list_len(const list_t *h)
 {
