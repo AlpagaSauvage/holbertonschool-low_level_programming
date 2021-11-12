@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**
+ * struct list_s - structure
+ * @str: string
+ * @len: lenght
+ * @next: next node
+ */
+
 typedef struct list_s
 {
 	char *str;
