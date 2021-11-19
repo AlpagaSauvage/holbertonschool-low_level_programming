@@ -32,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
- 	exposant = _strlen(b) - 1;
+	exposant = _strlen(b) - 1;
 
 	for (i = exposant; i >= 0; i--)
 	{
