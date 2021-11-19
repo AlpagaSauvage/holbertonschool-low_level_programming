@@ -25,12 +25,14 @@ int _strlen(const char *s)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int exposant = _strlen(b) - 1;
+	unsigned int exposant;
 	int i;
 	unsigned int result = 0, c = 1;
 
 	if (b == NULL)
 		return (0);
+
+ 	exposant = _strlen(b) - 1;
 
 	for (i = exposant; i >= 0; i--)
 	{
