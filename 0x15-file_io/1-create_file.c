@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+* _strlen - check the length of the string
+* Return: length of the string
+* @s: string
+*/
+
+int _strlen(const char *s)
+{
+	int i;
+
+	for (i = 0 ; s[i] != '\0'; i++)
+	{
+	}
+
+	return (i);
+}
+
+/**
  * create_file - create file if doen't exist
  * @filename: filename
  * @text_content: text content
