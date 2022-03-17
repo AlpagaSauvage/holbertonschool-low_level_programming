@@ -10,8 +10,7 @@ clean:
 	rm *~
 oclean: $(OBJ)
 	rm -f $(OBJ)
-fclean: clean
+fclean:
 	rm -f *~ $(NAME)
 	rm -f $(OBJ)
-re:
-	fclean all
+re: fclean all
