@@ -5,3 +5,13 @@ NAME= school
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	rm *~
+oclean: $(OBJ)
+	rm -f $(OBJ)
+fclean: clean
+	rm -f *~ $(NAME)
+	rm -f $(OBJ)
+re:
+	fclean all
