@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
-* linear_search - Search algo in linear time complexity.
+* linear_search - Search algo in linear time complexity
 *
 * @array: The array to search in
 * @size: The size of the array
